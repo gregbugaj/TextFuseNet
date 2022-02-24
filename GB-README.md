@@ -1,3 +1,8 @@
+## Annotation Tool
+We are going to utilize total-text dataset
+https://github.com/cs-chan/Total-Text-Dataset
+
+
 # Environment setup
 
 ```
