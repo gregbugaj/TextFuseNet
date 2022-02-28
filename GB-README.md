@@ -1,3 +1,22 @@
+
+## Troubleshooting
+
+Error compiling detectron2
+```
+  nvcc fatal   : Unsupported gpu architecture 'compute_86'
+```
+Follow instructions from here
+https://stackoverflow.com/questions/69865825/nvcc-fatal-unsupported-gpu-architecture-compute-86
+
+
+https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805
+
+-- Could NOT find CUDNN (missing: CUDNN_LIBRARY_PATH CUDNN_INCLUDE_PATH) 
+CMake Warning at cmake/public/cuda.cmake:114 (message):
+  Caffe2: Cannot find cuDNN library.  Turning the option off
+Call Stack (most recent call first):
+
+
 ## Annotation Tool
 We are going to utilize total-text dataset
 https://github.com/cs-chan/Total-Text-Dataset
