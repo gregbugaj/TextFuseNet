@@ -23,6 +23,9 @@ def setup_cfg(args):
     cfg = get_cfg()
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
+
+    cfg.MODEL.DEVICE='cpu'
+
     # Set model
     cfg.MODEL.WEIGHTS = args.weights
     # Set score_threshold for builtin models
@@ -51,7 +54,7 @@ def get_parser():
 
     parser.add_argument(
         "--input",
-        default="./input_images/*.jpg",
+        default="./input_images/*.png",
         nargs="+",
         help="the folder of ctw1500 test images"
     )
@@ -131,10 +134,10 @@ if __name__ == "__main__":
         img = cv2.imread(i)
         start_time = time.time()
   
-        prediction, vis_output, polygons = detection_demo.run_on_image(img)
+        prediction, vis_output   = detection_demo.run_on_image(img)
 
-        txt_save_path = output_path + 'res_img' + img_name.split('.')[0] + '.txt'
-        save_result_to_txt(txt_save_path,prediction,polygons)
+        # txt_save_path = output_path + 'res_img' + img_name.split('.')[0] + '.txt'
+        # save_result_to_txt(txt_save_path,prediction,polygons)
 
         print("Time: {:.2f} s / img".format(time.time() - start_time))
         vis_output.save(img_save_path)

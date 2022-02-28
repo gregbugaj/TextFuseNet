@@ -23,6 +23,9 @@ def setup_cfg(args):
     cfg = get_cfg()
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
+
+    cfg.MODEL.DEVICE='cpu'
+
     # Set model
     cfg.MODEL.WEIGHTS = args.weights
     # Set score_threshold for builtin models
@@ -124,6 +127,9 @@ if __name__ == "__main__":
 
     start_time_all = time.time()
     img_count = 0
+
+    print('All images')
+    print(test_images_path)
     for i in glob.glob(test_images_path):
         print(i)
         img_name = os.path.basename(i)

@@ -27,6 +27,8 @@ def setup_cfg(args):
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
 
+    cfg.MODEL.DEVICE='cpu'
+
     # Set model
     cfg.MODEL.WEIGHTS = args.weights
     # Set score_threshold for builtin models
@@ -124,8 +126,8 @@ if __name__ == "__main__":
         prediction, vis_output = detection_demo.run_on_image(img)
         polygons=[]
 
-        txt_save_path = output_path + 'res_img' + img_name.split('.')[0].split('img')[1] + '.txt'
-        save_result_to_txt(txt_save_path,prediction,polygons)
+        # txt_save_path = output_path + 'res_img' + img_name.split('.')[0].split('img')[1] + '.txt'
+        # save_result_to_txt(txt_save_path,prediction,polygons)
 
         print("Time: {:.2f} s / img".format(time.time() - start_time))
         vis_output.save(img_save_path)

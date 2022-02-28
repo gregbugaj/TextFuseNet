@@ -62,8 +62,8 @@ class VisualizationDemo(object):
             if "instances" in predictions:
                 instances = predictions["instances"].to(self.cpu_device)
                 print(f"Number of prediction : {len(instances)}")
-                # vis_output,polygons = visualizer.draw_instance_predictions(predictions=instances)
-                vis_output = visualizer.draw_instance_predictions(predictions=instances)
+                vis_output,polygons = visualizer.draw_instance_predictions(predictions=instances)
+                # vis_output = visualizer.draw_instance_predictions(predictions=instances)
 
         return predictions, vis_output#, polygons
 
