@@ -51,7 +51,7 @@ def get_parser():
 
     parser.add_argument(
         "--input",
-        default="./input_images/*.jpg",
+        default="./input_images/*.png",
         nargs="+",
         help="the folder of icdar2015 test images"
     )
@@ -66,7 +66,7 @@ def get_parser():
     parser.add_argument(
         "--confidence-threshold",
         type=float,
-        default=0.65,
+        default=0.2,
         help="Minimum score for instance predictions to be shown",
     )
     parser.add_argument(
@@ -131,10 +131,10 @@ if __name__ == "__main__":
         img = cv2.imread(i)
         start_time = time.time()
 
-        prediction, vis_output, polygons = detection_demo.run_on_image(img)
-
+        prediction, vis_output = detection_demo.run_on_image(img)
+        polygons=[]
         txt_save_path = output_path + 'res_' + img_name.split('.')[0] + '.txt'
-        save_result_to_txt(txt_save_path,prediction,polygons)
+        # save_result_to_txt(txt_save_path,prediction,polygons)
 
         print("Time: {:.2f} s / img".format(time.time() - start_time))
         vis_output.save(img_save_path)

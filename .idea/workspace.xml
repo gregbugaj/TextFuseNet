@@ -2,60 +2,156 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a85be100-89e0-4999-8f02-378dcd87b0f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TextFuseNet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TextFuseNet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/ctw1500_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/ctw1500_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-README.md" beforeDir="false" afterPath="$PROJECT_DIR$/GB-README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/ocr/icdar2013_101_FPN.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/ocr/icdar2013_101_FPN.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/ocr/icdar2015_101_FPN.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/ocr/icdar2015_101_FPN.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/ocr/totaltext_101_FPN.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/ocr/totaltext_101_FPN.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/icdar2013_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/icdar2013_detection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/icdar2015_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/icdar2015_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/predictor.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/predictor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/totaltext_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/totaltext_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/checkpoint/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/checkpoint/c2_model_loading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/checkpoint/detection_checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/checkpoint/model_zoo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/config/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/config/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/config/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/config/defaults.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/catalog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/dataset_mapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/builtin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/builtin_meta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/cityscapes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/coco.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/lvis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/lvis_v0_5_categories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/pascal_voc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/datasets/register_coco.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/detection_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/samplers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/samplers/distributed_sampler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/samplers/grouped_batch_sampler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/transforms/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/transforms/transform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/data/transforms/transform_gen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/engine/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/engine/defaults.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/engine/hooks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/engine/launch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/engine/train_loop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/cityscapes_evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/coco_evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/evaluator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/lvis_evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/panoptic_evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/pascal_voc_evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/sem_seg_evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/evaluation/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/batch_norm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/ROIAlign/ROIAlign.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/ROIAlign/ROIAlign_cpu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/ROIAlign/ROIAlign_cuda.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cpu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cpu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/cuda_version.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/deformable/deform_conv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/deformable/deform_conv_cuda.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/nms_rotated/nms_rotated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/nms_rotated/nms_rotated_cpu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/csrc/vision.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/deform_conv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/mask_ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/nms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/roi_align.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/roi_align_rotated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/rotated_boxes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/shape_spec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/layers/wrappers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/anchor_generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/backbone/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/backbone/backbone.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/backbone/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/backbone/fpn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/backbone/resnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/box_regression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/matcher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/meta_arch/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/meta_arch/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/meta_arch/panoptic_fpn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/meta_arch/rcnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/meta_arch/retinanet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/meta_arch/semantic_seg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/poolers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/postprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/proposal_generator/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/proposal_generator/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/proposal_generator/proposal_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/proposal_generator/rpn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/proposal_generator/rpn_outputs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/proposal_generator/rrpn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/proposal_generator/rrpn_outputs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/box_head.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/cascade_rcnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/fast_rcnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/keypoint_head.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/mask_head.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/mutil_path_fuse_module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/roi_heads.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/rotated_fast_rcnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/roi_heads/seg_head.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/sampling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/modeling/test_time_augmentation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/solver/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/solver/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/solver/lr_scheduler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/structures/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/structures/boxes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/structures/image_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/structures/instances.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/structures/keypoints.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/structures/masks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/structures/rotated_boxes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/collect_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/colormap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/comm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/events.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/registry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/serialize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/video_visualizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectron2/utils/visualizer.py" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/icdar2013_detection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/totaltext_detection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo/ctw1500_detection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1064">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/icdar2015_detection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-              <folding>
-                <element signature="e#71#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -77,6 +173,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -93,6 +192,7 @@
     <option name="width" value="1735" />
     <option name="height" value="639" />
   </component>
+  <component name="ProjectId" id="24KII4F5ECs8McMJjyuEJyLzx8k" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -132,22 +232,110 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager" selected="Python.icdar2015_detection">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="TextFuseNet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="icdar2013_detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TextFuseNet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/icdar2013_detection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="icdar2015_detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TextFuseNet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/icdar2015_detection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="totaltext_detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TextFuseNet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/totaltext_detection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.icdar2013_detection" />
+      <item itemvalue="Python.icdar2015_detection" />
+      <item itemvalue="Python.totaltext_detection" />
+    </list>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="Python.icdar2015_detection" />
+        <item itemvalue="Python.totaltext_detection" />
+        <item itemvalue="Python.icdar2013_detection" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -158,6 +346,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600766558482</updated>
+      <workItem from="1643372769102" duration="3533000" />
     </task>
     <servers />
   </component>
@@ -183,6 +372,39 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/lib/python3.8/site-packages/yacs/config.py</url>
+          <line>490</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../detectron2/detectron2/utils/visualizer.py</url>
+          <line>394</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TextFuseNet$icdar2013_detection.coverage" NAME="icdar2013_detection Coverage Results" MODIFIED="1643373741007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo/demo.py">

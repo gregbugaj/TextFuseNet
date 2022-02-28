@@ -1,5 +1,6 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 import argparse
+from ast import arg
 import glob
 import multiprocessing as mp
 import os
@@ -19,10 +20,13 @@ WINDOW_NAME = "COCO detections"
 
 
 def setup_cfg(args):
+
+    print(args)
     # load config from file and command-line arguments
     cfg = get_cfg()
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
+
     # Set model
     cfg.MODEL.WEIGHTS = args.weights
     # Set score_threshold for builtin models
@@ -51,7 +55,7 @@ def get_parser():
 
     parser.add_argument(
         "--input",
-        default="./input_images/*.jpg",
+        default="./input_images/*.png",
         nargs="+",
         help="the folder of icdar2013 test images"
     )
@@ -66,7 +70,7 @@ def get_parser():
     parser.add_argument(
         "--confidence-threshold",
         type=float,
-        default=0.7,
+        default=0.5,
         help="Minimum score for instance predictions to be shown",
     )
     parser.add_argument(
@@ -101,6 +105,7 @@ if __name__ == "__main__":
     args = get_parser().parse_args()
 
     cfg = setup_cfg(args)
+
     detection_demo = VisualizationDemo(cfg)
 
     test_images_path = args.input
@@ -111,11 +116,13 @@ if __name__ == "__main__":
     for i in glob.glob(test_images_path):
         print(i)
         img_name = os.path.basename(i)
-        img_save_path = output_path + img_name.split('.')[0] + '.jpg'
+        img_save_path = output_path + img_name.split('.')[0] + '.png'
         img = cv2.imread(i)
         start_time = time.time()
 
-        prediction, vis_output, polygons = detection_demo.run_on_image(img)
+        # prediction, vis_output, polygons = detection_demo.run_on_image(img)
+        prediction, vis_output = detection_demo.run_on_image(img)
+        polygons=[]
 
         txt_save_path = output_path + 'res_img' + img_name.split('.')[0].split('img')[1] + '.txt'
         save_result_to_txt(txt_save_path,prediction,polygons)
