@@ -1,2 +1,14 @@
 input_images/
 input_images/
+build/
+venv
+demo/__pycache__/
+detectron2.egg-info/
+out_dir_r101/
+test_icdar2013/
+test_icdar2015/
+test_totaltext/
+
+detectron2/_C.cpython-38-x86_64-linux-gnu.so
+detectron2/__pycache__/
+detectron2/utils/__pycache__/
