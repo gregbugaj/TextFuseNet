@@ -76,3 +76,6 @@ Evaluation of TextFuseNet on different datasets with ResNet-50 backbone:
 # Acknowledgements
 The authors would like to thank the developers of PyTorch and Detectron2. See [LICENSE](https://github.com/ying09/TextFuseNet/blob/master/LICENSE) for additional details.  
 Please let me know if you encounter any issues.
+
+
+https://github.com/aakarsh7599/Text-Detection-using-Detectron2
