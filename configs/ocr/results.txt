@@ -1,0 +1,144 @@
+021  time: 1.0930  data_time: 0.0011  lr: 0.001000  max_mem: 9899M
+[03/09 14:02:42 fvcore.common.checkpoint]: Saving checkpoint to ./out_dir_r101/pre_model/model_0099999.pth
+[03/09 14:02:42 fvcore.common.checkpoint]: Saving checkpoint to ./out_dir_r101/pre_model/model_final.pth
+[03/09 14:02:43 d2.data.datasets.coco]: Loaded 43 images in COCO format from datasets/synthtext_gb_highres/train.json
+[03/09 14:02:43 d2.data.build]: Distribution of training instances among all 63 categories:
+|  category  | #instances   |  category  | #instances   |  category  | #instances   |
+|:----------:|:-------------|:----------:|:-------------|:----------:|:-------------|
+|    text    | 487          |     0      | 0            |     1      | 0            |
+|     2      | 0            |     3      | 0            |     4      | 0            |
+|     5      | 0            |     6      | 0            |     7      | 0            |
+|     8      | 0            |     9      | 0            |     A      | 0            |
+|     B      | 0            |     C      | 0            |     D      | 0            |
+|     E      | 0            |     F      | 0            |     G      | 0            |
+|     H      | 0            |     I      | 0            |     J      | 0            |
+|     K      | 0            |     L      | 0            |     M      | 0            |
+|     N      | 0            |     O      | 0            |     P      | 0            |
+|     Q      | 0            |     R      | 0            |     S      | 0            |
+|     T      | 0            |     U      | 0            |     V      | 0            |
+|     W      | 0            |     X      | 0            |     Y      | 0            |
+|     Z      | 0            |     a      | 0            |     b      | 0            |
+|     c      | 0            |     d      | 0            |     e      | 0            |
+|     f      | 0            |     g      | 0            |     h      | 0            |
+|     i      | 0            |     j      | 0            |     k      | 0            |
+|     l      | 0            |     m      | 0            |     n      | 0            |
+|     o      | 0            |     p      | 0            |     q      | 0            |
+|     r      | 0            |     s      | 0            |     t      | 0            |
+|     u      | 0            |     v      | 0            |     w      | 0            |
+|     x      | 0            |     y      | 0            |     z      | 0            |
+|            |              |            |              |            |              |
+|   total    | 487          |            |              |            |              |
+[03/09 14:02:43 d2.evaluation.evaluator]: Start inference on 43 images
+[03/09 14:03:44 d2.evaluation.evaluator]: Total inference time: 0:00:53 (1.394737 s / img per device, on 1 devices)
+[03/09 14:03:44 d2.evaluation.evaluator]: Total inference pure compute time: 0:00:13 (0.357335 s / img per device, on 1 devices)
+[03/09 14:03:44 d2.evaluation.coco_evaluation]: Preparing results for COCO format ...
+[03/09 14:03:44 d2.evaluation.coco_evaluation]: Saving results to ./out_dir_r101/pre_model/inference/coco_instances_results.json
+[03/09 14:03:44 d2.evaluation.coco_evaluation]: Evaluating predictions ...
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.56s).
+Accumulating evaluation results...
+DONE (t=0.02s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.018
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.038
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.019
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.073
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.022
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.231
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.141
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.235
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.950
+[03/09 14:03:44 d2.evaluation.coco_evaluation]: Evaluation results for bbox: 
+|  AP   |  AP50  |  AP75  |  APs  |  APm  |  APl  |
+|:-----:|:------:|:------:|:-----:|:-----:|:-----:|
+| 1.847 | 2.258  | 2.257  | 3.813 | 1.869 | 7.312 |
+[03/09 14:03:44 d2.evaluation.coco_evaluation]: Per-category bbox AP: 
+| category   | AP    | category   | AP   | category   | AP   |
+|:-----------|:------|:-----------|:-----|:-----------|:-----|
+| text       | 1.847 | 0          | nan  | 1          | nan  |
+| 2          | nan   | 3          | nan  | 4          | nan  |
+| 5          | nan   | 6          | nan  | 7          | nan  |
+| 8          | nan   | 9          | nan  | A          | nan  |
+| B          | nan   | C          | nan  | D          | nan  |
+| E          | nan   | F          | nan  | G          | nan  |
+| H          | nan   | I          | nan  | J          | nan  |
+| K          | nan   | L          | nan  | M          | nan  |
+| N          | nan   | O          | nan  | P          | nan  |
+| Q          | nan   | R          | nan  | S          | nan  |
+| T          | nan   | U          | nan  | V          | nan  |
+| W          | nan   | X          | nan  | Y          | nan  |
+| Z          | nan   | a          | nan  | b          | nan  |
+| c          | nan   | d          | nan  | e          | nan  |
+| f          | nan   | g          | nan  | h          | nan  |
+| i          | nan   | j          | nan  | k          | nan  |
+| l          | nan   | m          | nan  | n          | nan  |
+| o          | nan   | p          | nan  | q          | nan  |
+| r          | nan   | s          | nan  | t          | nan  |
+| u          | nan   | v          | nan  | w          | nan  |
+| x          | nan   | y          | nan  | z          | nan  |
+Loading and preparing results...
+DONE (t=0.02s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *segm*
+DONE (t=0.58s).
+Accumulating evaluation results...
+DONE (t=0.02s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.019
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.034
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.019
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.091
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.004
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.023
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.240
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.138
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.245
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.900
+[03/09 14:03:45 d2.evaluation.coco_evaluation]: Evaluation results for segm: 
+|  AP   |  AP50  |  AP75  |  APs  |  APm  |  APl  |
+|:-----:|:------:|:------:|:-----:|:-----:|:-----:|
+| 1.909 | 2.258  | 2.258  | 3.444 | 1.939 | 9.100 |
+[03/09 14:03:45 d2.evaluation.coco_evaluation]: Per-category segm AP: 
+| category   | AP    | category   | AP   | category   | AP   |
+|:-----------|:------|:-----------|:-----|:-----------|:-----|
+| text       | 1.909 | 0          | nan  | 1          | nan  |
+| 2          | nan   | 3          | nan  | 4          | nan  |
+| 5          | nan   | 6          | nan  | 7          | nan  |
+| 8          | nan   | 9          | nan  | A          | nan  |
+| B          | nan   | C          | nan  | D          | nan  |
+| E          | nan   | F          | nan  | G          | nan  |
+| H          | nan   | I          | nan  | J          | nan  |
+| K          | nan   | L          | nan  | M          | nan  |
+| N          | nan   | O          | nan  | P          | nan  |
+| Q          | nan   | R          | nan  | S          | nan  |
+| T          | nan   | U          | nan  | V          | nan  |
+| W          | nan   | X          | nan  | Y          | nan  |
+| Z          | nan   | a          | nan  | b          | nan  |
+| c          | nan   | d          | nan  | e          | nan  |
+| f          | nan   | g          | nan  | h          | nan  |
+| i          | nan   | j          | nan  | k          | nan  |
+| l          | nan   | m          | nan  | n          | nan  |
+| o          | nan   | p          | nan  | q          | nan  |
+| r          | nan   | s          | nan  | t          | nan  |
+| u          | nan   | v          | nan  | w          | nan  |
+| x          | nan   | y          | nan  | z          | nan  |
+[03/09 14:03:45 d2.engine.defaults]: Evaluation results for synthtext_gb_highres in csv format:
+[03/09 14:03:45 d2.evaluation.testing]: copypaste: Task: bbox
+[03/09 14:03:45 d2.evaluation.testing]: copypaste: AP,AP50,AP75,APs,APm,APl
+[03/09 14:03:45 d2.evaluation.testing]: copypaste: 1.8473,2.2583,2.2566,3.8134,1.8693,7.3115
+[03/09 14:03:45 d2.evaluation.testing]: copypaste: Task: segm
+[03/09 14:03:45 d2.evaluation.testing]: copypaste: AP,AP50,AP75,APs,APm,APl
+[03/09 14:03:45 d2.evaluation.testing]: copypaste: 1.9088,2.2583,2.2583,3.4436,1.9392,9.0999
+[03/09 14:03:45 d2.utils.events]: eta: 0:00:01  iter: 99999  total_loss: 0.076  loss_cls: 0.002  loss_box_reg: 0.019  loss_mask: 0.018  loss_seg: 0.005  loss_rpn_cls: 0.002  loss_rpn_loc: 0.021  time: 1.0930  data_time: 0.0010  lr: 0.001000  max_mem: 9899M
+[03/09 14:03:45 d2.engine.hooks]: Overall training speed: 44397 iterations in 13:28:46 (1.0930 s / it)
+[03/09 14:03:45 d2.engine.hooks]: Total training time: 13:32:12 (0:03:25 on hooks)

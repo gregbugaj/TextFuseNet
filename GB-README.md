@@ -68,6 +68,38 @@ True
 pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 
 
+Evaluate
+```
+python demo/synth_detection.py --config-file configs/ocr/synthtext_pretrain_101_FPN.yaml  --weights ./out_dir_r101/pre_model/model_0000099.pth
+```
+
+# Training Setup 
+Visualizing dataset
+
+```
+python tools/visualize_data.py  --source dataloader --config-file configs/ocr/synthtext_pretrain_101_FPN.yaml
+python tools/visualize_data.py  --source annotation --config-file configs/ocr/synthtext_pretrain_101_FPN.yaml --output-dir ./gen-mask
+```
+
+```
+python tools/visualize_data.py  --source dataloader --config-file configs/ocr/synthtext_pretrain_101_FPN.yaml
+```
+
+Base traing 
+```
+python tools/train_net.py --num-gpus 1 --config-file configs/ocr/synthtext_pretrain_101_FPN.yaml
+```
+
+
+
+
+ python demo/synth_detection.py --config-file configs/ocr/synthtext_pretrain_50_FPN.yaml  --weights ./out_dir_r50/pre_model/model_0000199.pth
+
+
+
+Label categoris
+['text', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] != ['text', 'charact
+
 =======
 
 

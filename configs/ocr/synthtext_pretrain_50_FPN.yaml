@@ -1,0 +1,39 @@
+_BASE_: "./Base-RCNN-FPN.yaml"
+MODEL:
+  MASK_ON: True
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  PIXEL_STD: [57.375, 57.120, 58.395]
+  RESNETS:
+    STRIDE_IN_1X1: False  # this is a C2 model
+    DEPTH: 50
+  ROI_HEADS:
+    # NMS_THRESH_TEST: 0.4
+    NMS_THRESH_TEST: 0.2
+  TEXTFUSENET_SEG_HEAD:
+    # FPN_FEATURES_FUSED_LEVEL: 1
+    # POOLER_SCALES: (0.125,)
+    FPN_FEATURES_FUSED_LEVEL: 2
+    POOLER_SCALES: (0.0625,)    
+DATASETS:
+  TRAIN: ("coco_data_01_char_train", "coco_data_01_char_train_500","coco_data_01_char_train_1000", "coco_data_01_char_lines_train_1k",)   
+  TEST: ("coco_data_01_char_large_train_250","coco_data_01_char_test", "coco_data_02_char_test_250", "coco_data_02_char_train_250", "coco_data_01_char_test_250", "coco_data_01_char__lines_test_250", )  
+
+SOLVER:
+  IMS_PER_BATCH: 1
+  BASE_LR: 0.002
+  STEPS: (100000,)
+  MAX_ITER: 100000
+  CHECKPOINT_PERIOD: 200
+
+INPUT:
+  MIN_SIZE_TRAIN: (800,900,1000,1100,1200,1300,1400)
+  MAX_SIZE_TRAIN: 1400
+  MIN_SIZE_TEST: 600
+  MAX_SIZE_TEST: 3400
+
+OUTPUT_DIR: "./out_dir_r50/pre_model/"
+
+# please register your synthtext datasets in detectron2/data/datasets/builtin.py.
+# because of the limit of memory, we split synthtext into several subsets for training, such as synthtext1.
+# we adjust the learning rate dynamically
+

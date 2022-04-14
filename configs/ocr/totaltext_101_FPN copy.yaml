@@ -19,17 +19,17 @@ DATASETS:
   TRAIN: ("totaltext",)
   TEST: ("totaltext",)
 SOLVER:
-  IMS_PER_BATCH: 1
+  IMS_PER_BATCH: 4
   BASE_LR: 0.001
   STEPS: (40000,80000,)
   MAX_ITER: 120000
   CHECKPOINT_PERIOD: 2500
 
 INPUT:
-  MIN_SIZE_TRAIN: (512,1000,1200)
+  MIN_SIZE_TRAIN: (800,1000,1200)
   MAX_SIZE_TRAIN: 1500
   MIN_SIZE_TEST: 800
   MAX_SIZE_TEST: 1333
   
 
-OUTPUT_DIR: "./out_dir_r101/totaltext_model_gb/"
+OUTPUT_DIR: "./out_dir_r101/totaltext_model/"
