@@ -1,3 +1,6 @@
+## Understanding Detectron2
+https://medium.com/@hirotoschwert/digging-into-detectron-2-47b2e794fabd
+
 
 ## Troubleshooting
 

@@ -17,7 +17,7 @@ MODEL:
     # (See "modeling/rpn/rpn_outputs.py" for details of this legacy issue)
     # which is approximately 1000 proposals per-image since the default batch size for FPN is 2.
     # POST_NMS_TOPK_TRAIN: 1000
-    # POST_NMS_TOPK_TEST: 1000
+    # POST_NMS_TOPK_TEST: 1000we
     POST_NMS_TOPK_TRAIN: 2000
     POST_NMS_TOPK_TEST: 2000
   ROI_HEADS:

@@ -129,8 +129,8 @@ if __name__ == "__main__":
         img_save_path = output_path + img_name.split('.')[0] + '.jpg'
         img = cv2.imread(i)
         start_time = time.time()
-        
-        prediction, vis_output = detection_demo.run_on_image(img)
+
+        predictions, vis_output, polygons = detection_demo.run_on_image(img)
         polygons = []
 
         # txt_save_path = output_path + 'res_img' + img_name.split('.')[0].split('img')[1] + '.txt'
